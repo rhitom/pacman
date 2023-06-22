@@ -1,0 +1,84 @@
+Q-Values at iteration 100 for action 'north' are NOT correct.   Student solution:
+	q_values_k_100_action_north: """
+           illegal
+           -0.7064
+           illegal
+"""
+
+   Correct solution:
+	q_values_k_100_action_north: """
+           illegal
+           -0.6670
+           illegal
+"""
+
+Q-Values at iteration 100 for action 'south' are NOT correct.   Student solution:
+	q_values_k_100_action_south: """
+           illegal
+            3.0679
+           illegal
+"""
+
+   Correct solution:
+	q_values_k_100_action_south: """
+           illegal
+            3.2562
+           illegal
+"""
+
+Q-Values at iteration 100 for action 'east' are NOT correct.   Student solution:
+	q_values_k_100_action_east: """
+           illegal
+            0.0110
+           illegal
+"""
+
+   Correct solution:
+	q_values_k_100_action_east: """
+           illegal
+            0.9499
+           illegal
+"""
+
+Q-Values at iteration 100 for action 'west' are NOT correct.   Student solution:
+	q_values_k_100_action_west: """
+           illegal
+            0.1544
+           illegal
+"""
+
+   Correct solution:
+	q_values_k_100_action_west: """
+           illegal
+            0.8236
+           illegal
+"""
+
+Values are NOT correct.   Student solution:
+	values: """
+           -9.4767
+            0.1544
+            9.8175
+"""
+
+   Correct solution:
+	values: """
+           -9.4767
+            3.2562
+            9.8175
+"""
+
+Policy is NOT correct.   Student solution:
+	policy: """
+        exit      
+        west      
+        exit
+"""
+
+   Correct solution:
+	policy: """
+        exit      
+        south     
+        exit
+"""
+

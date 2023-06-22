@@ -1,0 +1,32 @@
+implementing value iteration and q-learning
+change valueIterationAgents.py,  qLearningAgents.py, and analysis.py
+
+Q1 VALUE ITERATION
+Vk+1(s) <- max(sum(T(s,a,s*)[R(s,a,s*) + yVk(s)]))
+- partially specified in valueIterationAgents.py
+- computeActionFromValues(state) - best action according to value function given by self.values
+- computeQValueFromValues(state, action) - returns Q-value of (state, action) pair given by the value function given by self.values
+(quantities displayed in the GUI - values are numbers in squares, Q-values are numbers in sq. quarters, policies are arrows out from each square)
+
+- use "batch" iteration (Sutton & Barto in Ch. 4.1 on page 91)
+
+- check output of value iteration after 5 valueIterationAgents
+
+Q2 - POLICIES 
+- discountGrid
+- choose settings of the discount, noise, and living reward parameters for this MDP 
+- if agent followed its potimal policy without being subject to any noise, it would exhibit the given behavior 
+- if behavior not achieved, returns "NOT POSSIBLE"
+
+- should produce
+1 Prefer the close exit (+1), risking the cliff (-10)
+2 Prefer the close exit (+1), but avoiding the cliff (-10)
+3 Prefer the distant exit (+10), risking the cliff (-10)
+4 Prefer the distant exit (+10), avoiding the cliff (-10)
+5 Avoid both exits and the cliff (so an episode should never terminate)
+- check what behavior a set of numbers ends up in using GUI 
+- (this one is mainly a guess and check)
+- the GUI for 1 should return arrow in 0,1 pointing east, 1,1 arroe pointing east, and 2,1 arrow pointing north 
+
+Q3 - Q-learning
+
